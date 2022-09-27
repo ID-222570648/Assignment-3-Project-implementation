@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=100%">
+  <title>"My Fruits and Veggies"</title>
+  <!----https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
+date accessed: 19/09/2022
+https://www.w3schools.com/css/css_boxmodel.asp date accessed: 19/09/2022
+https://stackoverflow.com/questions/55499968/how-do-i-make-entire-div-a-mailto-link date accessed: 19/09/2022
+https://www.callrail.com/blog/add-click-to-call-button-website-html date accessed: 19/09/2022
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#examples date accessed: 19/09/2022
+https://stackoverflow.com/questions/10859930/how-to-display-a-div-triggered-by-onclick-event date accessed: 19/09/2022
+https://www.w3schools.com/js/js_booleans.asp date accessed: 19/09/2022
+https://extension.umaine.edu/plugged-in/technology-marketing-communications/web/tips-for-web-managers/embed-map/ date accessed: 19/09/2022
+ https://stackoverflow.com/questions/2941189/how-to-overlay-one-div-over-another-div date accessed: 19/09/2022
+ -->
+  <link rel="stylesheet" href="styles.css">
+  <script> 
+    function showMenu()
+      {
+        document.getElementById("boxmenu").style.display='block';
+        document.getElementById("nav2").style.display = "inline-block";
+        document.getElementById('nav2 li').style.display='inline-block';
+       }        
+     function closeMenu()
+      {
+        document.getElementById("boxmenu").style.display='none';
+        document.getElementById("nav2").style.display = "none";
+        document.getElementById('nav2 li').style.display='none';
+
+     }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+
+  </head>
+  <body>
+   <!-------Code for header of the page-->
+  <div id = "header3">
+      <div id="logo" ></div>
+        <ul id="nav1" >
+            <li><a href="home.html"><h2 style="color:darkorange; ">Home</h2></a></li>
+            <li><a href="products.html"><h2 style="color:darkorange;">Products/Service</h2></a></li>
+            <li><a href="contact.html"><h2 style="color:darkorange;">Contact</h2></a></li> 
+        </ul>
+      <div id="div-menu-open" onclick='showMenu()'></div>
+     <div id ="welcome-text">
+        <h1>Contact Us</h1>
+      </div>
+      <div id="buttons" >
+        <button type="button" style="background-color: darkorange;
+            font-weight: bold;font-size: 100%;cursor: pointer;" 
+            onclick="window.open('https://goo.gl/maps/eWEYSu58kwCbwPxv8')">Visit Us</button>
+        <button type="button" style="background-color: darkorange;
+            font-weight: bold;font-size: 100%;cursor: pointer;" 
+            onclick="window.open('signup.html')">Call to order</button>
+      </div>
+      <!-----code of call for action-->
+     <div id="socialicons" >
+        <div id="div-email" onclick="window.open('mailto:xyz@abc.com')"> </div>
+        <div id="div-call" onclick="window.open('tel:0420375319')"></div>
+        <div id="div-facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100072744784454')"></div>
+        <div id="div-instagram" onclick="window.open('https://www.instagram.com/amoushumi9/')"></div>
+    </div>
+
+    </div>
+    <!-----code for menu that is displayed on button click when the screen width is below 798px---> 
+  <div id="boxmenu">
+    <div id="div-menu-close" onclick='closeMenu()'></div>
+    <ul id="nav2" >
+      
+      <li><a href="home.html"><h2 style="color:darkorange; ">Home</h2></a></li>
+      <li><a href="products.html"><h2 style="color:darkorange;">Products/Service</h2></a></li>
+      <li><a href="contact.html"><h2 style="color:darkorange;">Contact</h2></a></li> 
+  </ul>
+  </div>
+  <!----code for header ends-->
+  <div id="product">
+    <p style="text-align: center;"> 
+      <h2 style="text-align:center; font-style: normal; font-weight: bold; font-size: 20vm;"> 
+        Make purchase / Enquiry: </h2> <br> 
+      </p>
+      </div>
+
+      <!----code for form-->
+      <div id="ContactForm" v-bind:title="timestamp" >{{ message }}</div>
+
+      <script>
+        new Vue({
+          el: "#ContactForm",
+          data: {
+//message:contact.vue,
+            message: "Contact form ",
+            
+          },
+        })
+      </script>
+      <!----code for map-->
+      <div style=" margin-left: 19%;">
+      <div class="mapouter" >
+        <div class="gmap_canvas">
+          <iframe width="600" height="200" id="gmap_canvas" 
+          src="https://maps.google.com/maps?q=245%20Gower%20Street,%20Preston,%20VIC%203072&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          frameborder="0" scrolling="no" marginheight="0" 
+          marginwidth="0">
+        </iframe><a href="https://2piratebay.org"></a><br>
+        <style>.mapouter{position:relative;text-align:right;height:200px;width:600px;}</style>
+        <a href="https://www.embedgooglemap.net">google map iframe</a>
+        <style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:600px;}</style>
+      </div></div>
+      </div>
+<!----code for footer----->
+  <div id="footer">
+    <p>My Fruits and Veggies - 
+      <a href="https://goo.gl/maps/eWEYSu58kwCbwPxv8">245 Gower Street, Preston, VIC 3072 </a>
+      <a href="tel:0420375319">Tel: 0420 375 319</a>,
+      <a href="mailto:xyz@abc.com">Email: amoushumi9@gmail.com </a><br>
+    <a href="home.html" style="color:darkorange; ">Home</a>
+    <a href="products.html" style="color:darkorange;">Products/Service</a>
+    <a href="contact.html" style="color:darkorange;">Contact </a> 
+    </p>
+    
+  </div>
+</body>
+</html>

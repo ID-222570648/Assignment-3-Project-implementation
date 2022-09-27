@@ -1,0 +1,317 @@
+   
+   #header1{
+      width: 100%;
+      height: auto;
+      background-image: url('Header/berry.jpg');
+      background-size: cover;
+      display:inline-block;
+      
+    }
+    #header2{
+      width: 100%;
+      height: auto;
+      background-image: url('Header/mint.jpg');
+      background-size: cover;
+      display:inline-block;
+      
+    }
+    
+    #header3{
+      width: 100%;
+      height: auto;
+      background-image: url('Header/avocados.jpg');
+      background-size: cover;
+      display:inline-block;
+      
+    }
+    #footer {
+      width: 100%;
+      height: auto;
+      background-image: url('Header/vegetables.jpg');
+      background-size: cover;
+      display:inline-block;
+      
+    }
+    #logo{
+      width: 10%; 
+      height: 100px; 
+      padding: 2px; 
+      margin-top: 15px; 
+      margin-left: 15px;  
+      position: relative;
+      float: left;
+      display:inline;
+      background-image: url('Header/image.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #nav1 {
+      list-style-type: none;
+      text-align: center;
+      width: 50%; 
+      height: 80px; 
+      padding-top: 10px;
+      padding-bottom: 15px;
+      margin-top: 15px; 
+      margin-right: 0px;  
+      margin-left:auto;
+      position: relative;
+      float: right;
+      display:inline-block;
+      
+     }
+
+     #nav1 li {
+      display: inline-block;
+      font-size:  75%;
+      }
+
+      #nav2 {
+        list-style-type: none;
+        text-align: left;
+        width: 91%; 
+        height: 50px; 
+        position: relative;
+        margin-left: 0px;  
+        margin-right:auto;
+        /*float: left;*/
+        display:none;
+        
+        }
+
+       #nav2 li {
+        display: none;
+        font-size:  70%;
+        padding-right: 3%;
+        padding-top: 0%;
+        
+        }
+
+      a {
+      color: darkorange;
+      }
+      a:visited {
+      color: red;
+    }
+      a:hover {
+      color: white;
+    }
+          @media screen and (max-width: 798px){
+          #nav1 {
+          display:none;
+          }
+          #nav2 {
+            display:inline-block;
+            }
+            #nav2 li {
+              display: inline-block;
+              }
+          #div-menu-open{
+              height: 30px;
+              width:7%;
+              margin-top: 10px; 
+              margin-right: 10px;
+              display: inline; 
+              position: relative;
+              float: right;
+              background-image: url('Home/icon.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              } 
+
+              #div-menu-close{
+                height: 20px;
+                width:6%;
+                margin-top: 10px; 
+                margin-right: 10px;
+                display: inline; 
+                position:relative;
+                float: right;
+                background-image: url('Home/close.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                } 
+                #boxmenu {
+                  width: 100%;
+                  height: 100px;
+                  background-color: #8A9A5B;
+                  display:none;
+                  }
+              }
+              #welcome-text{
+              height:auto; 
+              width:60%; 
+              margin-top: 100px; 
+              margin-left: 10%; 
+              margin-bottom: 10px; 
+              margin-right: 20%;
+              padding-left: 10%;
+            }
+            h1 {
+              color:darkorange; text-align: center;
+              } 
+            #buttons {
+                height:auto; 
+                width:30%; 
+                margin-top: 0px; 
+                margin-left: 35%; 
+                margin-bottom: 0px; 
+                margin-right: 20%;
+                padding-left: 4%;
+                display: inline-block;
+              }
+              #socialicons{
+                height:auto; 
+                width:50%; 
+                margin-top: 0px; 
+                margin-left: 25%; 
+                margin-bottom: 0px; 
+                margin-right: 25%;
+                display: inline-block;
+              }
+              #div-facebook {
+                height: 50px;
+                width:12%;
+                margin-top: 10px; 
+                margin-left: 10% ;
+                display: inline; 
+                position: relative;
+                float: left;
+                background-image: url('Home/facebook.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              
+              } 
+            #div-instagram {
+                height: 50px;
+                width:12%;
+                margin-top: 10px; 
+                margin-left: 10% ;
+                display: inline; 
+                position: relative;
+                float: left;
+                background-image: url('Home/instagram.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              } 
+          #div-call {
+                height: 50px;
+                width:12%;
+                margin-top: 10px; 
+                margin-left: 10% ;
+                display: inline; 
+                position: relative;
+                float: left; 
+                background-image: url('Home/call1.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+             } 
+              
+            #div-email {
+                height: 50px;
+                width:12%;
+                margin-top: 10px; 
+                margin-left: 10% ;
+                display: inline; 
+                position: relative;
+                float: left;
+                background-image: url('Home/email.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+             
+              } 
+              #about {
+                width: 80%;
+                height: auto;
+                margin-left: 10%;
+               }
+              #product{
+                width: 80%;
+                height: auto;
+                margin-left: 10%;
+              }
+
+#image-old-business{
+      width: 50%;
+      height: 300px;
+      background-image: url('Home/old_business2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      display:inline-block;
+      margin-top:15px;
+      margin-bottom: 15px;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+#what-we-do {
+  width: 100%;
+  height: auto;
+}
+#testimonial{
+  width: 100%;
+  height: auto;
+
+  }
+
+  #container{
+    width: 80%;
+    height: auto;
+    display:inline-block;
+    /*margin-top:5px;
+    margin-bottom: 15px;*/
+    margin-left: 15%;
+    margin-right: 40%;
+    
+    
+    
+    }
+#testimonial1 {
+width: 27%;
+height: 200px;
+display:inline-block;
+background-image: url('Home/Testimonial1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#testimonial2 {
+width: 27%;
+height: 200px;
+display:inline-block;
+background-image: url('Home/Testimonial2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#testimonial3 {
+width: 27%;
+height: 200px;
+padding-right:25px;
+background-image: url('Home/Testimonial2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+display:inline-block;
+  }
+
+
+  
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+  #ContactForm {
+    width: 80%;
+                height: 200px;
+                margin-left: 10%;
+                border: 1px solid red;
+  }
